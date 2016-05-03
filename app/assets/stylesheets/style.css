@@ -24,7 +24,7 @@ footer {
     margin-top: 1em;
 }
 .relative{
-	position: relative;
+	position: absolute;
 }
 .absolute{
 	position: relative;
