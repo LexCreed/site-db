@@ -1,0 +1,41 @@
+.navbar {
+	margin-bottom: 0; 
+}
+.jumbotron {
+	color: #ECF3FC;
+    background: #2C2D31;
+	padding: 20px 0;
+}
+
+footer {
+	background: #2C2D31;
+	color: #ECF3FC;
+	padding: 5px 0;
+	
+
+.main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.top-space{
+    margin-top: 1em;
+}
+.field {
+    margin-top: 1em;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: relative;
+}
+.article-height{
+	height: 150px;
+}
+.background-cover{
+	background-position: center;
+	background-size: cover;
+}
+text-center{
+	text-align: center;
+}
