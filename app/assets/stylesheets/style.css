@@ -24,10 +24,10 @@ footer {
     margin-top: 1em;
 }
 .relative{
-	position: absolute;
+	position: relative;
 }
 .absolute{
-	position: relative;
+	position: absolute;
 }
 .article-height{
 	height: 150px;
