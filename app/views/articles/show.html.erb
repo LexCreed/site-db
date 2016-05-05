@@ -1,29 +1,23 @@
-<h1><%=@article.title %></h1>
+<article class="bottom-space">
+    <%= article_cover @article.cover.url %>
+    <div class="row text-center">
+        <div class="col-xs-12 ligth-border col-md-7">
+            <h1 class="be-big black"><%= @article.title %> </h1>
+            <p class="text-right be-small">
+                <%= link_to "Atras", articles_path, class:"underline" %> 
+                -
+                <% unless @article.user.nil? %>
+                    Escrito por: <%= @article.user.email %>
+                <%end%>
+            </p>
+            
+            <div class="text-justify">
+                <%= Sanitize.fragment(@article.body,Sanitize::Config::RELAXED).html_safe %>
+            </div>
 
-<% unless @article.user.nil? %>
-<p>
-    Escrito por: <%=@article.user.email %>
-</p>
-<%end%>
-
-<div class=" img-responsivefield">
-    <%= image_tag @article.cover.url(:thumb)%>
-</div>
-
-<div>
-    <%= Sanitize.fragment(@article.body,Sanitize::Config::RELAXED).html_safe %>
-</div>
-<div class="field">
-    <h3>Comentarios</h3>
-    <%= render "comments/form" %>
-    <ul id="comments-box">
-        <% @article.comments.each do |comment| %>
-            <li>
-              <%=comment.body %> - <%=comment.user.email %>  
-            </li>
-        <%end%>
-    </ul>
-</div>
-<div>
-    <%= link_to "Editar", edit_article_path(@article) %>
-</div>
+            <div class="top-space">
+                <%= render "articles/comments" %>
+            </div>
+        </div>
+    </div>
+</article>

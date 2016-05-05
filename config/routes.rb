@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get "/contact", to: "welcome#contact"
   get "/dashboard", to: "welcome#dashboard"  
-
+  get "/index",to: "welcome#index"
   put "/articles/:id/publish", to: "articles#publish"
+  
 end

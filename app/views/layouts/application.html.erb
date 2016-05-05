@@ -3,20 +3,18 @@
 <head>
   <title>DB</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   
 </head>
 <body>
 
 <header>
-    <nav class="navbar navbar-inverse navbar-static-top" role=navigation>
+    <nav class="navbar navbar-inverse navbar-static-top " role=navigation>
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header col-xs-6">
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navegacion">
                 
                  
                     <span class="sr-only">Desplegar / Ocultar Menu</span>
@@ -36,40 +34,38 @@
             </div>
             
             
-            <div class="collapse navbar-collapse" id="navegacion">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            Categorias <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="nav_categorias/series.html">Series</a></li>
-                            <li class="divider"></li>
-                            <li><a href="nav_categorias/un_tema.html">Un Tema</a></li>
-                        </ul>
-                    </li>
+            <div class="collapse navbar-collapse " id="navegacion">
+                <ul class="nav navbar-nav  ">
                     
                     <li><a <%=link_to "Blog", articles_path %> </li>
                     <li><a <%=link_to "Contacto", contact_path %> </li>
                     
-                    <nav class="be-red white large-padding">
-                        <ul class="no-list row center-xs middle-xs">   
-                            <li class="col-md  text-right">      
-                                <%if user_signed_in?%>
-                                    <li>
-                                        <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %> 
-                                    </li>
-                                <%else%>
-                                    <li>
-                                        <%= link_to "Iniciar Sesion", new_user_session_path %> 
-                                    </li>
-                                    <li>
-                                        <%= link_to "Crear Cuenta", new_user_registration_path %> 
-                                    </li>
-                                <%end%>                 
-                            </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            Admin <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a <%=link_to "New Post", new_article_path %> </li>
+                            <li class="divider"></li>
+                            <li><a <%=link_to "Dashboard", dashboard_path %> </li>
                         </ul>
-                    </nav>
+                    </li>
+                    
+                    <li class="text-right">      
+                        <%if user_signed_in?%>
+                            <li>
+                                <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %> 
+                            </li>
+                        <%else%>
+                            <li>
+                                <%= link_to "Iniciar Sesion", new_user_session_path %> 
+                            </li>
+                            <li>
+                                <%= link_to "Crear Cuenta", new_user_registration_path %> 
+                            </li>
+                        <%end%>                 
+                    </li>
+     
                 </ul>
             </div>
         </div>
@@ -78,60 +74,39 @@
 
 <section class="jumbotron">
     <div class="container">
-        <h1> &#60;D/B&#62; <small>Development pa' la Banda</small></h1>
+        <h1> &#60;D/B&#62; <small class="small">Development pa' la Banda</small></h1>
     </div>
 </section>
+
+
 
 <section class="main container">
     <div class="row">
-        <section class="post  col-md-9">
-            <div class="migas">
-                <ol class="breadcrumb">
-                    <li class="active">Inicio</li>
-                </ol>
-            </div>
-       
-  
+        <section class="post  col-md-12">
 <%= yield %>
-
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-<br><br>
-
-
-                <!-- aqui van los post
-            
-        </section>
-        <aside class="col-md-3 hidden-xs hidden-sm">
-            <h4>Ultimos Posts</h4>
-            <div class="list-group"  >
-                <a class="list-group-item active" <%=link_to "1", articles_path %></a>
-                <a class="list-group-item"<%=  %></a>
-                <a href="#" class="list-group-item">3</a>
-            </div>
-        </aside>
+        </section>     
     </div>
 </section>
- !-->
-<footer>
-    <div class="row container ">
+
+
+
+
+<footer class="footer ">
+    <div class=" container-fluid list-inline">
         <div class="col-xs-6">
-            <p>&#60;D/B&#62;</p>
+             <li><a <%=link_to "<D/B>", index_path %> </li>
         </div>
         <div class=" col-xs-6">
             <ul class=" list-inline text-right">
-                <li><a href="#">Inici</a></li>
-                <li><a href="#">Contacto</a></li>
+                 <li><a <%=link_to "inicio", index_path %> </li>
+                 <li><a <%=link_to "Contacto", contact_path %> </li>
             </ul>
         </div>
     </div>
 </footer>
-<section class="main container"></section>
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
-
 
 
