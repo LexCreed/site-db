@@ -1,7 +1,7 @@
 <% @articles.each do |article| %>
     <h1><%= link_to article.title, article %></h1>
     <div>
-        <%= article.body %> - <%= link_to "Eliminar", article, method: :delete %> - 
+        <%= truncate(article.body ,length:250,escape: false)%> - <%= link_to "Eliminar", article, method: :delete %> - 
         <% if article.may_publish?%>
             <%= link_to "Publicar", "/articles/#{article.id}/publish", method: :put %>
         <%end%>

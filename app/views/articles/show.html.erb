@@ -1,8 +1,11 @@
 <article class="bottom-space">
-    <%= article_cover @article.cover.url %>
+    <div class="text-center">
+        <%= article_cover @article.cover.url %>
+    </div>
+
     <div class="row text-center">
-        <div class="col-xs-12 ligth-border col-md-7">
-            <h1 class="be-big black"><%= @article.title %> </h1>
+        <div class="col-xs-12 ligth-border ">
+            <h1 class="be-big black"><%= @article.title %></h1>
             <p class="text-right be-small">
                 <%= link_to "Atras", articles_path, class:"underline" %> 
                 -
@@ -15,7 +18,7 @@
                 <%= Sanitize.fragment(@article.body,Sanitize::Config::RELAXED).html_safe %>
             </div>
 
-            <div class="top-space">
+            <div class="col-xs-12 text-center top-space">
                 <%= render "articles/comments" %>
             </div>
         </div>
