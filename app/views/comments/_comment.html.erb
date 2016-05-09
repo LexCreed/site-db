@@ -9,9 +9,12 @@
             </div>
         </div>
         <div class="col-xs-11 col-md-10">
-            <div class="box">
-                <%= comment.body %>
-            </div>
+            <ul id="comments-box">
+                <div class="box">
+                    <%= comment.body %> - <%= comment.user.email %>
+                </div>    
+            </ul>
+
         </div>
     </div>
 </artticle>
