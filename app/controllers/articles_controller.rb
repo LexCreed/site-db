@@ -6,9 +6,11 @@ class ArticlesController < ApplicationController
     before_action :user_signed_in!
     def index
        @articles = Article.paginate(page: params[:page],per_page:9).publicados.ultimos
+
     end
     def show
         @comment = Comment.new
+        @comments = @article.comments.paginate(page: params[:page], per_page:5).ultimos
     end
     
     def new
@@ -37,7 +39,7 @@ class ArticlesController < ApplicationController
     
     def publish
         @article.publish!
-        redirect_to @article
+        redirect_to articles_path
     end
     
     def edit

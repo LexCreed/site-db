@@ -13,7 +13,7 @@
                     Escrito por: <%= @article.user.email %>
                 <%end%>
             </p>
-            
+             
             <div class="text-justify">
                 <%= Sanitize.fragment(@article.body,Sanitize::Config::RELAXED).html_safe %>
             </div>
@@ -22,5 +22,8 @@
                 <%= render "articles/comments" %>
             </div>
         </div>
+        
     </div>
+
+
 </article>

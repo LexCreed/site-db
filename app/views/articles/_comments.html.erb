@@ -7,11 +7,16 @@
             <%= @article.comments.count%> comentario(s)
         </div>
     </div>
+
     <div class="text-cente col-xs-12  top-space" >
         <%= render "comments/form" %>
     </div>
-    
-    <div class="text-cente col-xs-5 r top-space " id="comments-box">
-        <%= render @article.comments %>
+    <div class="top-space text-center">
+    <%= will_paginate @comments %>
     </div>
+
+    <div class="text-cente col-xs-5 r top-space " id="comments-box">
+        <%= render @comments %>
+    </div>
+
 </div>

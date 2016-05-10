@@ -1,6 +1,6 @@
 <artticle>
     <header class="text-right be-small">
-        <%= time_ago_in_words(comment.created_at) %> ago - <%= link_to "Borrar" , [@article,comment], class:"black" %>
+        <%= time_ago_in_words(comment.created_at) %> ago - <%= link_to "Borrar" , [@article,comment], class:"black" , method: :delete  %>
     </header>
     <div class="row" >
         <div class="col-xs-1 col-md-1">
@@ -14,7 +14,6 @@
                     <%= comment.body %> - <%= comment.user.email %>
                 </div>    
             </ul>
-
         </div>
     </div>
 </artticle>
