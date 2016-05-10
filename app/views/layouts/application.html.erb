@@ -7,12 +7,12 @@
   <%= csrf_meta_tags %>
   
 </head>
-<body>
+<body class="content ">
 
 <header>
     <nav class="navbar navbar-static-top navbar-inverse  " role=navigation>
         <div class="container">
-            <div class="navbar-header text-center col-xs-5 col-md-6">
+            <div class="navbar-header col-xs-5 col-md-6 text-center ">
 
                 <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navegacion">
                 
@@ -77,12 +77,10 @@
 
 <section class="baner">
         <div class="row">
-            <div class="thumbnail col-xs-12">
-                <%= image_tag "bannerdb.jpg"  %> 
+            <div class="col-xs-12 " >
+                <%= image_tag "bannerdb.jpg", class: "img-responsive" %> 
             </div>            
         </div>
-
-
 </section>
 
 

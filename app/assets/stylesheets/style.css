@@ -1,9 +1,9 @@
 .navbar {
-	margin-bottom: 0 !important; 
-	background: #051825 !important;
+	margin-bottom: 0 !important; 	
 }
 .baner {
-
+	background: #051825 !important;
+	margin: 0px;
 }
 .small{
 	color: #2E6678 !important;
@@ -13,6 +13,9 @@
 	color: #3C99A5 !important;
 	padding: 5px 0;
 	bottom: 0;
+}
+.content {
+	position: relative;
 }
 .be-big {
 	font-size: 3em ; 
@@ -48,7 +51,6 @@
 }
 .hidden{
 	display: none;
-
 }
 .thumbnail{
 	padding: 0px !important;
