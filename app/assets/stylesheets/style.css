@@ -5,6 +5,9 @@
 	background: #051825 !important;
 	margin: 0px;
 }
+.navbar-inverse{
+	background: #051825 !important;
+}
 .small{
 	color: #2E6678 !important;
 }
@@ -89,5 +92,10 @@
 }
 .title{
 	color: #56626D;
+}
+.btn-login{
+	background: #051825 !important;
+	color: #BDB6B6 !important;
+}
 }
  

@@ -20,6 +20,6 @@
         <%end%>   
     </div>
     <div class="top-space text-center">
-        <%= will_paginate @articles %> 
+        <%= will_paginate @articles , renderer: BootstrapPagination::Rails %> 
     </div>
 </div>
