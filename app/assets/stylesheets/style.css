@@ -16,6 +16,13 @@
 	color: #3C99A5 !important;
 	padding: 5px 0;
 	bottom: 0;
+	position: relative;
+	height: 50px;
+}
+
+.main {
+    margin-top: 50px !important;
+    margin-bottom: 700px !important;
 }
 .content {
 	position: relative;
@@ -97,5 +104,15 @@
 	background: #051825 !important;
 	color: #BDB6B6 !important;
 }
+.btn-login-1{
+	color: #BDB6B6 !important;
 }
+.btn-coment{
+	padding: 9px 150px !important;
+	background: #051825 !important;
+	color: #BDB6B6 !important;
+}
+
+
+
  
