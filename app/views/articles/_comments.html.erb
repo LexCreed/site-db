@@ -12,9 +12,8 @@
         <%= render "comments/form" %>
     </div>
     <div class="top-space text-center">
-    <%= will_paginate @comments , renderer: BootstrapPagination::Rails %>
+        <%= will_paginate @comments, renderer: BootstrapPagination::Rails, :previous_label => t("<< Anterior"), :next_label => t("siguiente >>") %>
     </div>
-
     <div class="text-cente col-xs-5 r top-space " id="comments-box">
         <%= render @comments %>
     </div>

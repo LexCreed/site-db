@@ -5,6 +5,9 @@
 	background: #051825 !important;
 	margin: 0px;
 }
+.body{
+
+}
 .navbar-inverse{
 	background: #051825 !important;
 }
@@ -19,10 +22,12 @@
 	position: relative;
 	height: 50px;
 }
-
 .main {
     margin-top: 50px !important;
     margin-bottom: 700px !important;
+}
+.a,a:hover{
+	color: #D0BDBD !important;
 }
 .content {
 	position: relative;
@@ -51,7 +56,7 @@
     margin-top: 2em ;
 }
 .be-grey{
-	color: #FFFFFF !important;
+	color: #FBE9E9 !important;
 }
 .field {
     margin-top: 1em;
@@ -77,7 +82,7 @@
 	height: 150px;
 }
 .background-cover{
-	background-position: center;
+	background-position: center !important;
 	background-size: cover;
 }
 .text-justify{
@@ -112,7 +117,22 @@
 	background: #051825 !important;
 	color: #BDB6B6 !important;
 }
+.pagination{
+	background: #051825 !important;
+	color: #BDB6B6 !important;
+}
 
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  
+    color: #fff !important;
+    background-color: #051825 !important;
+    border-color: #000000 !important;
+
+}
+.pagination > li > a, .pagination > li > span {
+    color: #3A3939 !important;
+    background-color: #fff;
+    border: 1px solid #000000;
 
 
  

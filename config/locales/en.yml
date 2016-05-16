@@ -22,6 +22,10 @@
 en:
   hello: "Hello world"	
 
-
+en:
+  will_paginate:
+   Previous_label:"|<< "
+   next_label:">>|"
+   page_gap:"&hellip;"
 
 

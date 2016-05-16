@@ -1,5 +1,5 @@
-es:
-   will_paginate:
-      previous_label: "|<< "
-      next_label: ">>|"
-      page_gap: "&hellip;"
+pt-BR:
+	will_paginate:
+		previous_label:"|<< "
+		next_label:">>|"
+		page_gap:"&hellip;"
