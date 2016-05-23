@@ -7,6 +7,12 @@ gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
+
+group :production do
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

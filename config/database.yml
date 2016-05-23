@@ -4,6 +4,9 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
+
+#Bundler.require(*Rails.groups(assets: %w(development test production)))
+
 default: &default
   adapter: sqlite3
   pool: 5
@@ -25,8 +28,4 @@ production:
   adapter: postgresql
   encoding: unicode
   database: db_production
-  Bundler.require(*Rails.groups(assets: %w(development test production)))
-group :production do
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-end
+

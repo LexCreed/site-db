@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get "/index",to: "welcome#index"
   put "/articles/:id/publish", to: "articles#publish"
   
+# devise_for :users, :controllers => {registrations: 'registrations'}
+
 end
