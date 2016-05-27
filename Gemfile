@@ -38,12 +38,17 @@ gem 'will_paginate'
 gem 'aasm'
 gem 'epic-editor-rails'
 gem 'sanitize'
+
 gem 'bootstrap-sass'
 gem 'will_paginate-bootstrap'
 gem 'rails_12factor'
+
 gem "omniauth"
 gem "omniauth-facebook"
 gem "omniauth-twitter"
+
+gem 'dotenv-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

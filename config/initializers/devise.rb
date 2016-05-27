@@ -17,10 +17,14 @@ Devise.setup do |config|
   # config.navigational_formats = ["*/*", :html, :json]
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
-   config.omniauth :facebook, "1793986637490199", "0b221eb0e71bcd2f420d744c910dbd14"
-  #config.omniauth :facebook , ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
-   config.omniauth :twitter, '3I3X24zPyIUx9wfHsNEKFoSMm', "MusPEVhBRNE6QXeKKEU9rcbql7zpPrikenFKQXsSh504UxjGKX"
-  #config.omniauth :twitter ,  ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
+  config.omniauth :facebook, "1793986637490199", "0b221eb0e71bcd2f420d744c910dbd14"
+  config.omniauth :twitter, '3I3X24zPyIUx9wfHsNEKFoSMm', "MusPEVhBRNE6QXeKKEU9rcbql7zpPrikenFKQXsSh504UxjGKX"
+ 
+
+ # config.omniauth :facebook,   ENV['FACEBOOK_KEY'] ,  ENV['FACEBOOK_SECRET']  
+  #config.omniauth :twitter,   <%= ENV['TWITTER_KEY'] %> , <%= ENV['TWITTER_SECRET'] %> 
+
+
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
 
