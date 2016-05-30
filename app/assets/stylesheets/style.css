@@ -106,9 +106,18 @@
 	background: #051825 !important;
 	color: #BDB6B6 !important;
 }
-.btn-login-1{
+
+.btn-login-twitter{
+	background: #2A6E9C !important;
 	color: #BDB6B6 !important;
 }
+.btn-login-facebook{
+	background: #07456F !important;
+	color: #BDB6B6 !important;
+}
+
+
+
 .btn-coment{
 	padding: 9px 150px !important;
 	background: #051825 !important;
