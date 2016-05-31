@@ -116,7 +116,9 @@
 	color: #BDB6B6 !important;
 }
 
-
+.f{
+	font-weight: 100 !important;
+}
 
 .btn-coment{
 	padding: 9px 150px !important;
