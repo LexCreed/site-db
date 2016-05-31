@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'send/index'
+
   resources :articles do
     resources :comments, only: [:create, :destroy, :update]
   end
@@ -8,7 +10,10 @@ Rails.application.routes.draw do
   get "/dashboard", to: "welcome#dashboard"  
   get "/index",to: "welcome#index"
   put "/articles/:id/publish", to: "articles#publish"
-  
+
+  get 'send' => 'send#index'
+  post 'send' => 'send#create'
+
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], as: :finish_signup
 
 end

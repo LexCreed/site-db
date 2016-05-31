@@ -21,8 +21,8 @@ Devise.setup do |config|
   config.omniauth :twitter, '3I3X24zPyIUx9wfHsNEKFoSMm', "MusPEVhBRNE6QXeKKEU9rcbql7zpPrikenFKQXsSh504UxjGKX"
  
 
- # config.omniauth :facebook,   ENV['FACEBOOK_KEY'] ,  ENV['FACEBOOK_SECRET']  
-  #config.omniauth :twitter,   <%= ENV['TWITTER_KEY'] %> , <%= ENV['TWITTER_SECRET'] %> 
+  #config.omniauth :facebook => ENV['FACEBOOK_KEY'] ,  ENV['FACEBOOK_SECRET']  
+  #config.omniauth :twitter  => ENV['TWITTER_KEY'], ENV['TWITTER_SECRET'] 
 
 
   # Configure the parent class responsible to send e-mails.

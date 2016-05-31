@@ -1,0 +1,45 @@
+<div class="row  jumbotron">
+  <div class="main-container col-xs-12">
+    <div class="box">
+      <div classs="" >
+        <h1 class="text-center col-xs-12">Contactanos</h1>
+      </div> 
+      <div cloass="container form-group ">
+        <div class="text-center form-group">
+          <div class="main-container">
+            
+            <div class="field ">
+				<h3><%= flash[:notice] %></h3>
+				<%= form_tag send_path,method: :post do %>
+			</div>
+			
+			<div class="field "> 
+				<%= label_tag :name,"Nombre", class:"col-md-4 col-xs-12 text-left" %><br/>
+				<%= text_field_tag :name, "", class:"form-group col-xs-12"%> <br/>
+			</div>
+			
+			<div class="field "> 
+				<%= label_tag :email, "Email", class:"col-md-4 col-xs-12 text-left" %> <br/>
+				<%= text_field_tag :email, "", class:"form-group col-xs-12" %> <br/>
+			</div>
+			
+			<div class="field "> 
+				<%= label_tag :subject, "Asunto", class:"col-md-4 col-xs-12 text-left" %> <br/>
+				<%= text_field_tag :subject, "", class:"form-group col-xs-12" %> <br/>
+			</div>
+
+			<div class="field "> 
+				<%= label_tag :content, "Contenido", class:"col-md-4 col-xs-12 text-left" %><br/>
+				<%= text_area_tag :content, "", class:"form-group col-xs-12"%> <br/>
+			</div>
+
+			<div class="box "> 
+				<%= submit_tag "Enviar", class:"btn btn-login btn-lg btn-block"  %>
+			</div>
+				<% end %>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
