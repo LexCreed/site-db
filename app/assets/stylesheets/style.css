@@ -58,6 +58,10 @@
 .field {
     margin-top: 1em;
 }
+.textarea {
+    overflow: scroll;
+    height: 100px;
+}
 .grey{
 	color: #10213E!important;
 }

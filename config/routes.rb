@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'send/index'
 
   resources :articles do
-    resources :comments, only: [:create, :destroy, :update]
+  resources :comments, only: [:create, :destroy, :update]
   end
   devise_for :user, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   root 'welcome#index'

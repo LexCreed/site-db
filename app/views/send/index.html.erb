@@ -9,8 +9,8 @@
           <div class="main-container">
             
             <div class="field ">
-				<h3><%= flash[:notice] %></h3>
-				<%= form_tag send_path,method: :post do %>
+				<!--<%= flash[:notice]%> -->
+				<%= form_tag send_path, method: :post do %>
 			</div>
 			
 			<div class="field "> 
@@ -30,7 +30,7 @@
 
 			<div class="field "> 
 				<%= label_tag :content, "Contenido", class:"col-md-4 col-xs-12 text-left" %><br/>
-				<%= text_area_tag :content, "", class:"form-group col-xs-12"%> <br/>
+				<%= text_area_tag :content, "", class:"form-group textarea col-xs-12"%> <br/>
 			</div>
 
 			<div class="box "> 
