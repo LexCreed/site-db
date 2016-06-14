@@ -1,8 +1,5 @@
 class SendController < ApplicationController
-
-
   def index
-
   end
 
   def create 

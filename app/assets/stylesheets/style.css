@@ -21,7 +21,7 @@
 }
 .main {
     margin-top: 50px !important;
-    margin-bottom: 700px !important;
+    margin-bottom: 350px !important;
 }
 .a,a:hover{
 	color: #D0BDBD !important;
@@ -121,7 +121,8 @@
 }
 
 .f{
-	font-weight: 100 !important;
+	
+    font-size: initial;
 }
 
 .btn-coment{

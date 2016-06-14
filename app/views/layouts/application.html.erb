@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>DB</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -95,12 +96,12 @@
 <footer class="footer bs-docs-footer ">
     <div class=" container-fluid list-inline">
         <div class="col-xs-6">
-             <li><a <%=link_to "<D/B>", index_path,class:"btn-login" %> </li>
+             <li> <%=link_to "<D/B>", index_path,class:"btn-login" %> </li>
         </div>
         <div class=" col-xs-6">
             <ul class=" list-inline text-right">
                  
-                 <li><a <%=link_to "Contacto", contact_path,class:"btn-login" %> </li>
+                 <li> <%=link_to "Contacto", contact_path,class:"btn-login" %> </li>
             </ul>
         </div>
     </div>

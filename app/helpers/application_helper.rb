@@ -4,7 +4,7 @@ module ApplicationHelper
     
         html_class = options[:class]
         html_style = "background:url(#{url});"\
-                   "width:auto;height:500px;padding:370px;background-size:cover;"             
+                   "width:auto;height:29em;padding:16em; background-size:contain;"             
                    
         html = "<header style='#{html_style} ' class='#{html_class}'>"\
                 "</header>"
