@@ -1,21 +1,27 @@
-<article class="bottom-space">
-    <div class=" ">
-        <%= article_cover   @article.cover.url, class:""%>
-    </div>
 
+<article class="bottom-space">
+
+<div class=" col-xs-12">
+    <%=image_tag @article.cover.url(), class:"img-responsive col-xs-12" %>
+</div>
     <div class="row text-center">
-        <div class="col-xs-12 ligth-border ">
+        <div class="col-xs-12 ">
             <h1 class="be-big black"><%= @article.title %></h1>
-            <p class="text-right be-small">
-                <%= link_to "Atras", articles_path, class:"underline" %> 
-                -
-                <% unless @article.user.nil? %>
-                    Escrito por: <%= @article.user.email %>
-                <%end%>
-            </p>
+            <div class="text-right be-small">
+                <p class="col-xs-12">
+                    <%= link_to "Atras", articles_path, class:"underline" %> 
+                    -
+                    <% unless @article.user.nil? %>
+                       Escrito por: <%= @article.user.email %>
+                    <%end%>    
+                </p>
+
+            </div>
              
-            <div class="text-justify">
-                <%= Sanitize.fragment(@article.body,Sanitize::Config::RELAXED).html_safe %>
+            <div class="text-justify col-xs-12 col-sm-12">
+                <div class"container ">
+                    <%= Sanitize.fragment(@article.body,Sanitize::Config::RELAXED).html_safe %>
+                </div>
             </div>
 
             <div class="col-xs-12 text-center top-space">
