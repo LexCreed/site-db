@@ -21,7 +21,7 @@
         <div class="field">
             <%= f.hidden_field :body, id:"body-textarea" %> 
             <%= f.hidden_field :markup_body, id:"markup-body-textarea" %> 
-            <div id="epiceditor" style="height:250px;"> </div>
+            <div id="epiceditor" style="height:550px;"> </div>
         </div>
         <br>
         <div class="field text-center">
@@ -44,7 +44,32 @@
             $("#markup-body-textarea").val( editor.exportFile("nuevo_articulo") );
         });
         </script>
-
+<br>
    </div>
-  </div>
+         <div class="col-md-12">
+        <td class="text-inline ">
+            <ul>
+                <li class="col-xs-12 col-sm-6">  
+                    <span class="bazul">&lt;p&gt;</span>Contenido<span class="azul">&lt;/p&gt;</span><br />
+                    <span class="bverde">### </span><span>Subtitulo</span> <br>   
+                    <span class="bazul">&lt;b&gt;</span>Texto en negrita<span class="azul">&lt;/b&gt;</span><br /> 
+                    <span class="bverde">&lt;big&gt;</span>Texto grande<span class="verde">&lt;/big&gt;</span><br /> 
+                    <span class="bazul">&lt;em&gt;</span>Texto enfatizado<span class="azul">&lt;/em&gt;</span><br /> 
+                    <span class="bverde">&lt;i&gt;</span>Texto en itálica<span class="verde">&lt;/i&gt;</span><br /> 
+                    <span class="bazul">&lt;small&gt;</span>Texto pequeño<span class="azul">&lt;/small&gt;</span><br />
+                </li>
+
+                <li class="col-xs-12 col-sm-6">
+                    <span class="bverde">&lt;strong&gt;</span>Texto fuerte<span class="verde">&lt;/strong&gt;</span><br />
+                    <span class="bazul">&lt;sub&gt;</span>Texto subíndice<span class="azul">&lt;/sub&gt;</span><br /> 
+                    <span class="bverde">&lt;sup&gt;</span>Texto superíndice<span class="verde">&lt;/sup&gt;</span><br /> 
+                    <span class="bazul">&lt;ins&gt;</span>Texto subrayado<span class="azul">&lt;/ins&gt;</span><br /> 
+                    <span class="bverde">&lt;del&gt;</span>Texto tachado<span class="verde">&lt;/del&gt;</span><br /> 
+                    <span class="bazul">&lt;tt&gt;</span>Texto codigo<span class="azul">&lt;/tt&gt;</span><br>
+                    <span class="bverde"> [' Link_Text :'](' Link_Url :')</span>
+                </li>
+            </ul>
+        </td>
+    </div>
+  </div> 
 </div>    
